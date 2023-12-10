@@ -8,3 +8,5 @@ sentimentr.Rproj
 README.html
 Thumbs.db
 polarity.html
+inst/doc
+docs

@@ -12,7 +12,27 @@ Status](https://coveralls.io/repos/trinker/sentimentr/badge.svg?branch=master)](
 [![DOI](https://zenodo.org/badge/5398/trinker/sentimentr.svg)](https://zenodo.org/badge/latestdoi/5398/trinker/sentimentr)
 [![](https://cranlogs.r-pkg.org/badges/sentimentr)](https://cran.r-project.org/package=sentimentr)
 
-![](tools/sentimentr_logo/r_sentimentr.png)
+![](man/figures/sentimentr_logo/r_sentimentr.png)
+
+**Original github repository: https://github.com/trinker/sentimentr**
+
+**Package author: Tyler Rinker**
+
+**Deployed website: https://https://jhu-statprogramming-fall-2023.github.io/biostat777-project3-part1-helenguo25**
+
+**Website author: Helen Guo (made website for BSPH140.777 class project)**
+
+**Pkgdown customization:**
+
+>Used 'minty' bootswatch theme
+
+>Used atom-one-light syntax highlighting
+
+>Specified light navbar
+
+>Added website contribution to footer
+
+>Added website contribution to sidebar
 
 **sentimentr** is designed to quickly calculate text polarity sentiment in the 
 English language at the sentence level and optionally aggregate by rows or 
@@ -546,7 +566,7 @@ Plotting
 
     plot(out)
 
-![](tools/figure/unnamed-chunk-11-1.png)
+![](man/figures/unnamed-chunk-11-1.png)
 
 ### Plotting at the Sentence Level
 
@@ -559,7 +579,7 @@ overall shape of the text's sentiment. The user can see
 
     plot(uncombine(out))
 
-![](tools/figure/unnamed-chunk-12-1.png)
+![](man/figures/unnamed-chunk-12-1.png)
 
 Making and Updating Dictionaries
 --------------------------------
@@ -862,7 +882,7 @@ to determine accuracy rates.
     Data Mining. 597-606.
     http&#58;//mdenil.com/media/papers/2015-deep-multi-instance-learning.pdf
 
-![](tools/figure/comparisons_between_sentiment_detectors_b.png)
+![](man/figures/comparisons_between_sentiment_detectors_b.png)
 
 The bar graph on the left shows the accuracy rates for the various
 sentiment set-ups in the three review contexts. The rank plot on the
@@ -894,7 +914,7 @@ In the figure below we compare raw table counts as a heat map, plotting
 the predicted values from the various algorithms on the x axis versus
 the human scored values on the y axis.
 
-![](tools/figure/comparisons_between_sentiment_detectors2.png)
+![](man/figures/comparisons_between_sentiment_detectors2.png)
 
 Across all three contexts, notice that the Stanford coreNLP algorithm is
 better at:
@@ -944,7 +964,7 @@ reviews.
         sentiment_by(review, review_id) %>%
         highlight()
 
-![](tools/figure/highlight.png)
+![](man/figures/highlight.png)
 
 Contact
 =======

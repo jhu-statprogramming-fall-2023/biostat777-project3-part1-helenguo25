@@ -14,7 +14,7 @@ ver <- gsub(regex, "\\2", desc[loc])
 verbadge <- sprintf('<a href="https://img.shields.io/badge/Version-%s-orange.svg"><img src="https://img.shields.io/badge/Version-%s-orange.svg" alt="Version"/></a></p>', ver, ver)
 get_sentences <- sentimentr::get_sentences
 verbadge <- ''
-````
+```
 
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
@@ -28,7 +28,7 @@ knit_hooks$set(htmlcap = function(before, options, envir) {
     }
     })
 knitr::opts_knit$set(self.contained = TRUE, cache = FALSE)
-knitr::opts_chunk$set(fig.path = "tools/figure/")
+knitr::opts_chunk$set(fig.path = "man/figures/")
 ```
 
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/0.1.0/active.svg)](https://www.repostatus.org/#active)
@@ -38,7 +38,27 @@ knitr::opts_chunk$set(fig.path = "tools/figure/")
 [![](https://cranlogs.r-pkg.org/badges/sentimentr)](https://cran.r-project.org/package=sentimentr)
 `r verbadge`
 
-![](tools/sentimentr_logo/r_sentimentr.png)
+![](man/figures/sentimentr_logo/r_sentimentr.png)
+
+Original github repository: https://github.com/trinker/sentimentr
+
+Package author: Tyler Rinker
+
+Deployed website: https://https://jhu-statprogramming-fall-2023.github.io/biostat777-project3-part1-helenguo25
+
+Website author: Helen Guo (made website for BSPH140.777 class project)
+
+Pkgdown customization: 
+
+  * Used 'minty' bootswatch theme
+  
+  * Used atom-one-light syntax highlighting
+  
+  * Specified light navbar
+  
+  * Added website contribution to footer
+  
+  * Added website contribution to sidebar
 
 **sentimentr** is designed to quickly calculate text polarity sentiment in the English language at the sentence level and optionally aggregate by rows or grouping variable(s).
 
@@ -399,7 +419,7 @@ The data sets are hand scored as either positive or negative.  The testing here 
 - Kotzias, D., Denil, M., De Freitas, N., & Smyth,P. (2015). *From group to individual labels using deep features*. Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. 597-606. http://mdenil.com/media/papers/2015-deep-multi-instance-learning.pdf
 
 
-![](tools/figure/comparisons_between_sentiment_detectors_b.png)
+![](man/figures/comparisons_between_sentiment_detectors_b.png)
 
 The bar graph on the left shows the accuracy rates for the various sentiment set-ups in the three review contexts.  The rank plot on the right shows how the rankings for the methods varied across the three review contexts.  
 
@@ -417,7 +437,7 @@ file.copy(testing, getwd())
 In the figure below we compare raw table counts as a heat map, plotting the predicted values from the various algorithms on the x axis versus the human scored values on the y axis.  
 
 
-![](tools/figure/comparisons_between_sentiment_detectors2.png)
+![](man/figures/comparisons_between_sentiment_detectors2.png)
 
 Across all three contexts, notice that the Stanford coreNLP algorithm is better at:
 
@@ -454,7 +474,7 @@ hu_liu_cannon_reviews %>%
     highlight()
 ```
 
-![](tools/figure/highlight.png)
+![](man/figures/highlight.png)
 
 # Contact
 

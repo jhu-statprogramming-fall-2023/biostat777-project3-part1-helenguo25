@@ -1,0 +1,20 @@
+url: ~
+template:
+  bootstrap: 5
+  bootswatch: minty
+  theme: atom-one-light
+navbar:
+  bg: light
+footer:
+  structure:
+    left: [built_with]
+    right: [developed_by, note]
+  components:
+    note: Vignette created by Helen Guo.
+home:
+  sidebar:
+    structure: [links, license, community, citation, authors, dev, custom]
+    components:
+      custom:
+        title: Additional Contributions
+        text: Vignette created by Helen Guo
