@@ -18,7 +18,7 @@ Status](https://coveralls.io/repos/trinker/sentimentr/badge.svg?branch=master)](
 
 **Package author: Tyler Rinker**
 
-**Deployed website: https://https://jhu-statprogramming-fall-2023.github.io/biostat777-project3-part1-helenguo25**
+**Deployed website: https://jhu-statprogramming-fall-2023.github.io/biostat777-project3-part1-helenguo25/**
 
 **Website author: Helen Guo (made website for BSPH140.777 class project)**
 
